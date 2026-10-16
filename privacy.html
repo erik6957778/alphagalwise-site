@@ -27,7 +27,7 @@
 <p>Applies to: the Alpha-Gal Wise&trade; app and alphagalwise.com, operated by WILLIAMS TECHNOLOGIES LLC.<br>Version: Rev A (draft). Effective date: October 19, 2026.</p>
 <div class="notice" role="note"><p><strong>The short version.</strong></p>
 <ul><li>You don't need an account. Your triggers, settings, scans, and label photos stay on your device unless you choose to Share a photo.</li><li>By default, nothing we receive identifies you.</li><li>We receive data only if you choose to send it: anonymous ingredient reports (off unless you turn them on) and label photos you Share one at a time.</li><li>We don't sell your data, and we don't track you across other companies' apps or websites.</li></ul></div>
-<nav aria-label="Sections"><p>Jump to: <a href="#collect">What we collect</a> &middot; <a href="#ads">Ads</a> &middot; <a href="#ingredient-reports">Ingredient reports</a> &middot; <a href="#photo-ingredients">Photo of ingredients</a> &middot; <a href="#retention">Retention</a> &middot; <a href="#choices">Your choices</a> &middot; <a href="#state-rights">State rights</a> &middot; <a href="#contact">Contact</a></p></nav>
+<nav aria-label="Sections"><p>Jump to: <a href="#collect">What we collect</a> &middot; <a href="#ads">No ads</a> &middot; <a href="#ingredient-reports">Ingredient reports</a> &middot; <a href="#photo-ingredients">Photo of ingredients</a> &middot; <a href="#retention">Retention</a> &middot; <a href="#choices">Your choices</a> &middot; <a href="#state-rights">State rights</a> &middot; <a href="#contact">Contact</a></p></nav>
 
 <h2 id="who">Who we are</h2>
 <p>Alpha-Gal Wise&trade; is published by WILLIAMS TECHNOLOGIES LLC, an Oklahoma limited liability company (&ldquo;we,&rdquo; &ldquo;us&rdquo;). This policy explains what information the app and this website handle, and your choices. Our <a href="/health-data-privacy.html">Consumer Health Data Privacy Policy</a> adds details for Washington, Nevada, and Connecticut residents.</p>
@@ -35,10 +35,10 @@
 
 <h2 id="collect">Information we collect</h2>
 <p><strong>By default, nothing that identifies you.</strong> The app has no account and never asks for your name, email, or phone number.</p>
-<p><strong>Kept only on your device</strong> (we don't receive it): your triggers and settings, recent scans, cached product data, your consent choices, label photos you save, and whether you removed ads.</p>
+<p><strong>Kept only on your device</strong> (we don't receive it): your triggers and settings, recent scans, cached product data, your consent choices, and label photos you save.</p>
 <p><strong>Received by us only if you choose:</strong></p>
 <ul><li><strong>Anonymous ingredient reports</strong>, if you turn them on. See <a href="#ingredient-reports">Anonymous ingredient reports</a>.</li><li><strong>Label photos you Share</strong>, one photo at a time. See <a href="#photo-ingredients">Photo of ingredients</a>.</li><li><strong>Emails you send us</strong>: your email address, your message, and anything you attach. Please don't include health details you'd rather not share.</li></ul>
-<p><strong>Received by other companies when you use the app:</strong> product lookups, ads, purchases, and website visits involve third-party services. See <a href="#third-parties">Third-party services</a>.</p>
+<p><strong>Received by other companies when you use the app:</strong> product lookups, purchases, and website visits involve third-party services. See <a href="#third-parties">Third-party services</a>.</p>
 
 <h2 id="not-collected">Information we do not collect</h2>
 <p>We do not collect your name, account details, contacts, precise location, device or advertising identifiers, your triggers or allergens, symptoms, or medical records. We don't use cookies or analytics on this website, and we don't add analytics or crash-reporting tools that identify you in the app.</p>
@@ -47,14 +47,13 @@
 <ul><li>To run app features you ask for, like looking up a barcode.</li><li>To improve ingredient matching, using anonymous reports.</li><li>To review label photos you Share and, if they pass review, add them to Open Food Facts.</li><li>To answer your emails.</li><li>To keep our systems secure and to comply with the law.</li></ul>
 <p>We don't use your information for profiling, and we don't use reports or photos for advertising.</p>
 
-<h2 id="ads">Advertising (banner ads)</h2>
-<p>The free version of the app shows a small banner ad provided by Google AdMob. We set it to show non-personalized ads, and the app does not ask for permission to track you. We never send the ad provider your triggers, scans, ingredient reports, or photos.</p>
-<p>To show an ad, limit how often it repeats, measure it, and prevent fraud, Google may automatically receive technical information such as your IP address, device type, operating system, the app's name, and whether you tapped the ad. Google's use of this information is covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. A donation removes the ads.</p>
-<!-- TODO(Erik/legal): AdMob is not yet integrated (src/services/ads.ts). Confirm the ad network, that non-personalized ads (npa=1) are requested, that ATT is not shown, and what Google receives. Attorney: ad SDK traffic in a health-adjacent app may raise WA MHMDA "sharing" questions. -->
+<h2 id="ads">No advertising</h2>
+<p><strong>The app does not show ads.</strong> It contains no advertising software, and we don't share any information with advertisers or ad networks.</p>
+<!-- NOTE: Erik decided Oct 16, 2026: no ads at launch. Adding ads later requires a policy update and privacy re-review. -->
 
 <h2 id="purchases">Donations and in-app purchases</h2>
-<p>Donations, including the purchase that removes ads, are handled by the Apple App Store (or Google Play, if offered). The store processes your payment. We don't receive your name, Apple ID, or payment card. We receive only confirmation that a purchase happened so the app can remove ads and restore your purchase. Whether ads are removed is stored on your device.</p>
-<!-- TODO(Erik): If RevenueCat (or another purchase service) is used, name it here and list what it receives (an anonymous app user ID and store receipts). -->
+<p>Donations are optional tips handled by the Apple App Store (or Google Play, if offered). The store processes your payment. We don't receive your name, Apple ID, or payment card. We receive only a confirmation that a purchase happened, so the app can thank you.</p>
+<!-- TODO(Erik): If RevenueCat (or another purchase service) is used, name it here and list what it receives (an anonymous app user ID and store receipts). Donation code still sets an "adsRemoved" flag (ads.ts); update when ads are dropped. -->
 
 <h2 id="ingredient-reports">Anonymous ingredient reports (opt-in)</h2>
 <p>The app can send us anonymous reports about ingredients it could not recognize, so we can improve matching for everyone. <strong>This feature is off unless you turn it on</strong>, either when the app asks or in Settings &rarr; Help improve ingredient matching. You can turn it off at any time. Turning it off does not affect any app feature.</p>
@@ -86,7 +85,6 @@
 <li><strong>Open Food Facts</strong> (openfoodfacts.org), a crowdsourced, nonprofit product database. When you scan, the app looks up the barcode directly with Open Food Facts, which receives the barcode and your IP address like any website request. Product data is available under the Open Database License (ODbL); product images under CC BY-SA. See the <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a>.</li>
 <li><strong>openFDA</strong> (open.fda.gov), a public U.S. Food and Drug Administration data service, used for some drug labels. It receives the lookup and your IP address. openFDA does not endorse this app, and this app is not affiliated with or endorsed by the FDA.</li>
 <li><strong>Supabase</strong> (with its network provider, Cloudflare) hosts our database and storage in the United States. It receives ingredient reports and shared photos on our behalf, and briefly processes your IP address to deliver them.</li>
-<li><strong>Google AdMob</strong> shows the banner ad (see <a href="#ads">Advertising</a>).</li>
 <li><strong>Apple</strong> (and Google Play, if offered) distributes the app and processes purchases under its own privacy policy.</li>
 <li><strong>GitHub Pages</strong> hosts this website. Like any web host, it logs visitors' IP addresses for security. This website uses no cookies, analytics, or tracking scripts.</li>
 <li><strong>Our email provider</strong> handles messages sent to support@alphagalwise.com.</li>
