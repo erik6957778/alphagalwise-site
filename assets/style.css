@@ -58,3 +58,5 @@ main:has(.hero.bleed){padding-top:0}
 .feature.bleed{margin-top:2rem}.feature.bleed h2{margin-top:0}
 .photo-navy a{color:#fff}
 .bleed.about-free{margin:2rem calc(50% - 50vw)}
+.photo-navy.warm::before{background:linear-gradient(rgba(74,38,20,.74),rgba(130,68,26,.80))}
+.photo-navy.warm .slogan{color:#FFE2A8;border-left-color:#F9A215}
