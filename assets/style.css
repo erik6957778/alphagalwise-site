@@ -61,3 +61,19 @@ main:has(.hero.bleed){padding-top:0}
 .photo-navy.warm::before{background:linear-gradient(rgba(74,38,20,.74),rgba(130,68,26,.80))}
 .photo-navy.warm .slogan{color:#FFE2A8;border-left-color:#F9A215}
 
+
+/* Sticky header + mobile menu */
+header.site{position:sticky;top:0;z-index:50}
+html{scroll-padding-top:5.5rem}
+.menu-btn{display:none;background:none;border:2px solid var(--hdr-muted);border-radius:8px;padding:.45rem .5rem;cursor:pointer;flex-direction:column;gap:4px}
+.menu-btn span{display:block;width:22px;height:2px;background:var(--hdr-fg);border-radius:2px}
+.menu-btn:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+@media (max-width:720px){
+ header.site.compact .menu-btn{display:flex}
+ header.site.compact .wrap{flex-wrap:nowrap}
+ header.site.compact .tagline{display:none}
+ header.site.compact nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--hdr);border-bottom:4px solid var(--amber);padding:.5rem 1.25rem 1rem}
+ header.site.compact.open nav{display:block}
+ header.site.compact nav ul{flex-direction:column;gap:.25rem}
+ header.site.compact nav a{display:block;padding:.6rem 0}
+}
