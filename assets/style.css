@@ -56,6 +56,5 @@ main:has(.hero.bleed){padding-top:0}
 .photo-white h2{color:#001D47}.photo-white p{color:#0f1b2d}
 .hero.bleed{margin-top:0}
 .feature.bleed{margin-top:2rem}.feature.bleed h2{margin-top:0}
-main:has(.about-woods){padding-top:0}
-.about-woods.bleed{margin-top:0;padding-top:2rem;padding-bottom:2.5rem}
-.about-woods h1{color:#001D47;margin-top:0}
+.photo-navy a{color:#fff}
+.bleed.about-free{margin:2rem calc(50% - 50vw)}
