@@ -77,3 +77,4 @@ html{scroll-padding-top:5.5rem}
  header.site.compact nav ul{flex-direction:column;gap:.25rem}
  header.site.compact nav a{display:block;padding:.6rem 0}
 }
+@media (max-width:720px){ header.site.fixed{position:fixed;left:0;right:0;top:0} html{overflow-anchor:none} }
