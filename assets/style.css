@@ -27,6 +27,8 @@ h2{font-size:1.4rem;margin-top:2rem;color:var(--accent)}h3{font-size:1.1rem;marg
 .lead{font-size:1.2rem;color:var(--muted)}
 .soon{font-weight:600;color:var(--fg);border-left:4px solid var(--amber);padding-left:.75rem}
 .slogan{font-size:1.3rem;font-weight:700;color:var(--accent);border-left:6px solid var(--amber);padding:.25rem 0 .25rem .9rem;margin:1rem 0}
+.feature{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--amber);border-radius:12px;padding:.25rem 1.25rem 1rem;margin-top:2rem}
+.feature h2{margin-top:1rem}
 .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:1rem}
 .card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:12px;padding:1.1rem 1.25rem}
 .card h3{margin-top:0}
