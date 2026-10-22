@@ -78,3 +78,9 @@ html{scroll-padding-top:5.5rem}
  header.site.compact nav a{display:block;padding:.6rem 0}
 }
 @media (max-width:720px){ header.site.fixed{position:fixed;left:0;right:0;top:0} html{overflow-anchor:none} }
+
+.about-photo{float:right;width:min(42%,320px);margin:.3rem 0 1rem 1.5rem}
+.about-photo img{display:block;width:100%;height:auto;border-radius:12px;border:4px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.about-photo figcaption{font-size:.85rem;color:var(--muted);text-align:center;margin-top:.35rem}
+@media (max-width:600px){.about-photo{float:none;width:100%;max-width:360px;margin:0 auto 1.25rem}}
+.photo-navy .about-photo figcaption{color:#FFE2A8}
