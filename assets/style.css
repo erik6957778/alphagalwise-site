@@ -84,3 +84,5 @@ html{scroll-padding-top:5.5rem}
 .about-photo figcaption{font-size:.85rem;color:var(--muted);text-align:center;margin-top:.35rem}
 @media (max-width:600px){.about-photo{float:none;width:100%;max-width:360px;margin:0 auto 1.25rem}}
 .photo-navy .about-photo figcaption{color:#FFE2A8}
+
+.ftoc{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem 1.5rem;margin:.25rem 0 1.25rem}.ftoc h2{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin:0 0 .5rem}footer.site .ftoc ul{display:block;margin:0}footer.site .ftoc a{text-decoration:underline;text-underline-offset:3px}.ftoc li{margin:.3rem 0}@media(max-width:760px){.ftoc{grid-template-columns:1fr 1fr}}
